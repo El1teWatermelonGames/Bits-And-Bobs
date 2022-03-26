@@ -1,5 +1,6 @@
 package com.EliteWatermelon.bitsandbobs;
 
+import block.ModBlocks;
 import com.mojang.logging.LogUtils;
 import item.ModItems;
 import net.minecraft.world.level.block.Block;
@@ -34,6 +35,7 @@ public class bitsandbobs
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
